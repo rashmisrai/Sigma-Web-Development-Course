@@ -1,0 +1,32 @@
+h3 {
+  text-align: center;
+  color: rgba(82, 4, 118, 0.862);
+  font-family: sans-serif;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+h3:hover {
+  color: aqua;
+}
+.font {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: rgb(181, 244, 160);
+  font-family: Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  line-break: auto;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.new {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: rgb(125, 125, 244);
+  letter-spacing: 2px;
+  line-break: auto;
+  line-height: 1.5;
+  font-family: "Arial Narrow Bold", sans-serif;
+}
