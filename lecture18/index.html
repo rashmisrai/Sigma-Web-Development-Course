@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS box model</title>
+    <style>
+      * {
+        padding: 0px;
+      }
+      .box {
+        padding: 10px;
+        margin: 10px;
+        background-color: aqua;
+        border: 2px solid blueviolet;
+        height: auto;
+        box-sizing: border-box;
+      }
+      p {
+        padding: 20px;
+        background-color: rgb(197, 104, 104);
+        border: 2px solid black;
+        height: auto;
+        box-sizing: border-box;
+      }
+      .box1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: large;
+        color: rgb(135, 4, 116);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eligendi
+      nihil, exercitationem in autem consequuntur! Perferendis perspiciatis
+      ullam similique, atque quidem ratione unde quas expedita inventore
+      quibusdam dolorum odit est!
+    </p>
+
+    <div class="box box1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+      incidunt illum ipsum nisi dolor harum impedit nihil ex accusantium, cumque
+      totam recusandae dicta! Exercitationem, perspiciatis impedit! Aliquid iure
+      magni ullam?
+    </div>
+
+    <div class="box box2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat corrupti
+      illum nulla sapiente a, quos odit asperiores placeat suscipit facere
+      maiores debitis tenetur, veniam aliquam dolores soluta harum quaerat
+      incidunt!
+    </div>
+  </body>
+</html>
