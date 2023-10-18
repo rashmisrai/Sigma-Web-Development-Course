@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+
+    <style>
+      * {
+        background-color: rgba(111, 225, 225, 0.858);
+        margin: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        margin-block: 10px;
+      }
+
+      h3 > span:hover {
+        background-color: blueviolet;
+      }
+      h3 {
+        text-decoration: underline;
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h3 > span {
+        background-color: rgb(246, 208, 16);
+        border: 2px solid rgb(11, 106, 189);
+      }
+      p:first-child {
+        border: 2px solid black;
+        background-color: rgba(140, 184, 124, 0.545);
+        overflow: hidden;
+      }
+      .c1 {
+        background-color: rgb(158, 190, 62);
+        border-radius: 2px;
+        border: 2px solid rgb(32, 28, 55);
+      }
+      #col {
+        background-color: rgba(242, 120, 193, 0.592);
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cascasde Algorithm  -->
+    <!-- CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+    Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+    
+    1. Position and order of appearance: the order in which your CSS rules appear
+    2. Specificity: an algorithm that determines which CSS selector has the strongest match
+    3. Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+    4. Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type -->
+
+    <h3>
+      <span> Cascasde Algorithm </span>
+    </h3>
+    <article>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+        ducimus voluptates harum vitae minima atque officiis assumenda delectus
+        veritatis laudantium ipsa, sequi sit suscipit. Laborum ullam totam ut
+        nesciunt minus.
+      </p>
+
+      <p class="c1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+        possimus sint reiciendis omnis aut, ad doloribus, aliquid quam amet
+        dolor iure inventore. Asperiores nihil perspiciatis repudiandae fugit
+        quod vero quam.
+      </p>
+    </article>
+
+    <div>
+      <p class="red c1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+        facere, iusto explicabo quam libero voluptatum est exercitationem, qui
+        quis quisquam molestias quod. Quibusdam maxime laboriosam cupiditate
+        quis est doloremque! Unde.
+      </p>
+      <p id="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni
+        rerum quos quaerat molestiae quidem ipsam natus accusantium laboriosam
+        consectetur eveniet odit voluptate, aspernatur iusto corporis autem.
+        Placeat quaerat aut itaque reiciendis ullam. Dolore exercitationem
+        cupiditate, cum culpa nobis placeat necessitatibus error ipsam quisquam,
+        dolor a doloribus amet. Corporis, esse.
+      </p>
+    </div>
+  </body>
+</html>
